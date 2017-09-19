@@ -16,8 +16,8 @@ class MenuHeader extends React.PureComponent {
       }
     }
     return(
-      <div className="jumbotron" style={{backgroundImage:"url('./pictures/"+currentPicture+"')",height:"400px"}}>
-      <div className="container bannerWrapper">
+      <div className="jumbotron menubanner" style={{backgroundImage:"url('../pictures/"+currentPicture+"')"}}>
+      <div className="container text-center bannerWrapper bg-shadow">
         <h1 className="display-3">{current}</h1>
       </div>
       </div>

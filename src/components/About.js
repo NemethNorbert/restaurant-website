@@ -10,7 +10,8 @@ class About extends React.PureComponent {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 2,
+      responsive: [ { breakpoint: 576, settings: { slidesToShow: 1, centerPadding:0,  } }, { breakpoint: 665, settings: { slidesToShow: 1 } }, { breakpoint: 1092, settings: { slidesToShow: 2, } }, { breakpoint: 1400, settings: { slidesToShow: 3 } } ],
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 5000,
@@ -22,15 +23,15 @@ class About extends React.PureComponent {
     };
     return (
       <div>
-        <div className="container">
+        <div className="container" style={{width:"90%"}}>
           <h1>AboutPage</h1>
           <Slider {...settings}>
-            <div><img src="../pictures/picture1.png" alt="kaja"/></div>
-            <div><img src="../pictures/picture2.png" alt="kaja"/></div>
-            <div><img src="../pictures/picture3.png" alt="kaja"/></div>
-            <div><img src="../pictures/picture4.png" alt="kaja"/></div>
-            <div><img src="../pictures/picture5.png" alt="kaja"/></div>
-            <div><img src="../pictures/picture6.png" alt="kaja"/></div>
+            <div><img className="SliderImg" src="../pictures/picture1.png" alt="kaja"/></div>
+            <div><img className="SliderImg" src="../pictures/picture2.png" alt="kaja"/></div>
+            <div><img className="SliderImg" src="../pictures/picture3.png" alt="kaja"/></div>
+            <div><img className="SliderImg" src="../pictures/picture4.png" alt="kaja"/></div>
+            <div><img className="SliderImg" src="../pictures/picture5.png" alt="kaja"/></div>
+            <div><img className="SliderImg" src="../pictures/picture6.png" alt="kaja"/></div>
           </Slider>
         </div>
       </div>

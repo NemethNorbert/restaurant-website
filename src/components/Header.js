@@ -24,15 +24,16 @@ class Header extends React.PureComponent {
       centerMode: false,
       centerPadding: '0px',
     };
-    console.log("header rendered")
     return(
       <Slider {...settings}>
         {Object.values(this.state.main).map((types, index) =>
-            <div key={index} className="jumbotron" style={{backgroundImage:"url('../pictures/"+types.picture+"')",height:"500px"}}>
+            <div key={index} className="jumbotron menubanner" style={{backgroundImage:"url('../pictures/"+types.picture+"')",height:"500px"}}>
               <div className="container bannerWrapper">
                 <h1 className="display-3">{types.title}</h1>
                 <p className="lead underline">{types.body}</p>
-                <button className="btn btn-primary btn-lg ">{types.button}</button>
+                <div className="text-center marT">
+                <button className="btn btn-primary btn-lg">{types.button}</button>
+                </div>
               </div>
             </div>
           )

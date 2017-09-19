@@ -13,7 +13,7 @@ class CardList extends React.PureComponent {
     }
 
     return (
-      <div className="">
+      <div className="cardWrapper">
       {Object.values(card).map((meals) =>
           <ProductCard
             key={meals.id}
