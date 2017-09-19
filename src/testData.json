@@ -1,0 +1,540 @@
+{
+  "data": {
+    "Ételek": [
+      {
+        "id": "97ef6736abf24e33bfd8fb1f48f1b28d",
+        "name": "Pármai sonkás szendvics",
+        "picture": "picture1",
+        "category": "Szendvics",
+        "price": "1500",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "pármai sonka" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": true
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "0ad7bd8de15d45a5908aa0828e98725e",
+        "name": "Brie sajtos szendvics",
+        "picture": "picture2",
+        "category": "Szendvics",
+        "price": "1200",
+        "contain": [ "paradicsom", "rukkola", "brie" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "71c20bbca6db4152895f712bf91b7761",
+        "name": "Füstölt lazacos szendvics",
+        "picture": "picture3",
+        "category": "Szendvics",
+        "price": "800",
+        "contain": [ "paradicsom", "rukkola", "mozzarella", "füstölt lazac" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "b17a6c3d77704097b97796f098b8f079",
+        "name": "Füstölt lazac Saláta",
+        "picture": "picture4",
+        "category": "Grillek",
+        "price": "2000",
+        "contain": [ "paradicsom", "jégsaláta", "rukkola", "tojás", "lazac" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "07a02c6e2e01411e92c6d930f6c8d5cb",
+        "name": "TonhalSaláta",
+        "picture": "picture5",
+        "category": "Saláta",
+        "price": "1800",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "parmezán" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "e6c0766bb0c946f782c581544dfd803a",
+        "name": "Konyakos libamáj pástétom salátaágyon",
+        "picture": "picture6",
+        "category": "Saláta",
+        "price": "2800",
+        "contain": [ "jégsaláta", "rukkola", "libamáj pástétom", "balzsam ecet" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "b937a4bde815420cab10f8b27f4378c4",
+        "name": "B54 Vegetáriánus Saláta",
+        "picture": "picture7",
+        "category": "Saláta",
+        "price": "1200",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "parmezán" ],
+        "extra":
+          {
+            "vega": true,
+            "glutenfree": true,
+            "lactosefree": true,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "beab5c39e511417b80d9af07b7b4cca0",
+        "name": "Vargányakrém",
+        "picture": "picture8",
+        "category": "Toastkrémek",
+        "price": "1800",
+        "contain": [ "vargánya", "tejföl", "majonéz", "hagyma" ],
+        "extra":
+          {
+            "vega": true,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": true
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "3088c79e33554b1da7842534898457e6",
+        "name": "Padlizsánkrém",
+        "picture": "picture9",
+        "category": "Toastkrémek",
+        "price": "800",
+        "contain": [ "padlizsán", "zöldségek" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": true,
+            "lactosefree": true,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      }
+    ],
+    "Desszertek": [
+      {
+        "id": "92e348b17f2f413c866aa7cd7c6ab948",
+        "name": "Sajt torta",
+        "picture": "dessert1",
+        "category": "Cukrászsütemények",
+        "price": "1500",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "pármai sonka" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": true
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "dabc25fbc02d493e897c9467043988af",
+        "name": "Vörös áfonyás túrótorta",
+        "picture": "dessert2",
+        "category": "Cukrászsütemények",
+        "price": "1200",
+        "contain": [ "paradicsom", "rukkola", "brie" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "5537354a9294412c81fec2d5223760bb",
+        "name": "Tripla csoki bellini",
+        "picture": "dessert3",
+        "category": "Cukrászsütemények",
+        "price": "800",
+        "contain": [ "paradicsom", "rukkola", "mozzarella", "füstölt lazac" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "2103b67bd8e94de89820fe0c0f6fcdaf",
+        "name": "Epres görög joghurt müzlivel",
+        "picture": "dessert4",
+        "category": "Joghurt",
+        "price": "2000",
+        "contain": [ "paradicsom", "jégsaláta", "rukkola", "tojás", "lazac" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "543eb62857a04e6caeb7c26d23ab3431",
+        "name": "Málnás görög joghurt müzlivel",
+        "picture": "dessert5",
+        "category": "Joghurt",
+        "price": "1800",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "parmezán" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "2176a562386d4e809539dde3953a0bec",
+        "name": "Pina Colada Tart",
+        "picture": "dessert6",
+        "category": "Cukrászsütemények",
+        "price": "2800",
+        "contain": [ "jégsaláta", "rukkola", "libamáj pástétom", "balzsam ecet" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      }
+    ],
+    "Italok": [
+      {
+        "id": "898e4a8606f147c1be894c30f47709bf",
+        "name": "Espresso",
+        "picture": "italok1",
+        "category": "Kávék",
+        "price": "1500",
+        "contain": [],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": true
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "21d7be002f194ca1ac834dadddfb075f",
+        "name": "Espresso Ristretto",
+        "picture": "italok2",
+        "category": "Kávék",
+        "price": "1200",
+        "contain": [],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "231266996ec649b78585afc27a4e034d",
+        "name": "Caffé Macchiato",
+        "picture": "italok3",
+        "category": "Kávék",
+        "price": "800",
+        "contain": [],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "3a9fc357debe456fb5a05fb455438e82",
+        "name": "Espresso Corretto",
+        "picture": "italok4",
+        "category": "Kávék",
+        "price": "2000",
+        "contain": [],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "8ba6c10fa96f43f796179218cd0ee334",
+        "name": "Espresso Caffá con Panna",
+        "picture": "italok5",
+        "category": "Kávék",
+        "price": "1800",
+        "contain": [],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "3c7c07f7f14f4c9b82233573c9d46688",
+        "name": "Frissen facsart narancslé",
+        "picture": "italok6",
+        "category": "Üditők",
+        "price": "2800",
+        "contain": [],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "a9530fb324fb45d0b2ee2f35ea783da7",
+        "name": "Espresso Lungo",
+        "picture": "italok7",
+        "category": "Kávék",
+        "price": "1200",
+        "contain": [],
+        "extra":
+          {
+            "vega": true,
+            "glutenfree": true,
+            "lactosefree": true,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "16a3210b742745f7968b22da2b499fa6",
+        "name": "Earl Grey",
+        "picture": "italok8",
+        "category": "Teák",
+        "price": "1800",
+        "contain": [],
+        "extra":
+          {
+            "vega": true,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": true
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "f85a66b218ca48368ca6f6542f662d21",
+        "name": "English breakfrest",
+        "picture": "italok9",
+        "category": "Teák",
+        "price": "800",
+        "contain": [],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": true,
+            "lactosefree": true,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      }
+    ],
+    "Pékség": [
+      {
+        "id": "b06a33a08eff4a6eb7fc8a58d33b6caa",
+        "name": "Áfonyás csiga",
+        "picture": "pekseg1",
+        "category": "Péksütemények",
+        "price": "1500",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "pármai sonka" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": true
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "bc813509e5574c898339834a8e5c9963",
+        "name": "Dán fahéjas tekercs",
+        "picture": "pekseg2",
+        "category": "Péksütemények",
+        "price": "1200",
+        "contain": [ "paradicsom", "rukkola", "brie" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "dc1d20847cdb4079afbdc707df3d97fe",
+        "name": "Diós kenyér",
+        "picture": "pekseg3",
+        "category": "Kenyerek",
+        "price": "800",
+        "contain": [ "paradicsom", "rukkola", "mozzarella", "füstölt lazac" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "ecf5cd2c573f478997140ff7d5631be1",
+        "name": "Hagymás kenyér",
+        "picture": "pekseg4",
+        "category": "Kenyerek",
+        "price": "2000",
+        "contain": [ "paradicsom", "jégsaláta", "rukkola", "tojás", "lazac" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "21a42b6ef437488f8dd6052843a51ddb",
+        "name": "Muffinok",
+        "picture": "pekseg5",
+        "category": "Péksütemények",
+        "price": "1800",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "parmezán" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "23348ca625f24290a7aee91594d735e8",
+        "name": "Vajas croissant",
+        "picture": "pekseg6",
+        "category": "Péksütemények",
+        "price": "2800",
+        "contain": [ "jégsaláta", "rukkola", "libamáj pástétom", "balzsam ecet" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "f4794dbd45fc4462958f99f560b0ee13",
+        "name": "Édes töltött croissant",
+        "picture": "pekseg7",
+        "category": "Péksütemények",
+        "price": "1200",
+        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "parmezán" ],
+        "extra":
+          {
+            "vega": true,
+            "glutenfree": true,
+            "lactosefree": true,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "6f6eb5ebc17b4c8e9f5c24f33e0f3130",
+        "name": "Kecskesajtos kosár",
+        "picture": "pekseg8",
+        "category": "Péksütemények",
+        "price": "1800",
+        "contain": [ "vargánya", "tejföl", "majonéz", "hagyma" ],
+        "extra":
+          {
+            "vega": true,
+            "glutenfree": false,
+            "lactosefree": false,
+            "wholemeal": true
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      },
+      {
+        "id": "f1a790aaca0c4247989865273aab7949",
+        "name": "Mediterrán zöldséges kosár",
+        "picture": "pekseg9",
+        "category": "Péksütemények",
+        "price": "800",
+        "contain": [ "sajt", "torta" ],
+        "extra":
+          {
+            "vega": false,
+            "glutenfree": true,
+            "lactosefree": true,
+            "wholemeal": false
+          },
+        "body": "Ide jön egy rövid leírás az aktuális termékről. Ne legyen ennél hosszabb"
+      }
+    ]
+  }
+}

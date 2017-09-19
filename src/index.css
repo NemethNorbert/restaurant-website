@@ -1,0 +1,98 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('./pictures/brand/pattern.png');
+}
+.container{
+  min-width: 650px;
+}
+
+.container{
+  width: 100%;
+}
+.pad {
+  padding: 10px;
+}
+.mar{
+  margin-bottom: 10px;
+}
+.search{
+  width: 200px
+}
+.extra {
+  font-size: 12px;
+  font-style: italic;
+}
+.specialCard{
+  border-radius: 50%!important;
+  width: 210px;
+  height: 210px;
+  margin-top: 0em;
+  box-shadow: 6px 6px 6px #ccc;
+  -webkit-box-shadow: 10px 0px 6px rgba(244,244,244,0.5);
+  -moz-box-shadow: 6px 6px 6px #ccc;
+  float:left;
+  display: inline;
+}
+.myCard{
+  background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(244,244,244,0) 18%, rgba(244,244,244,0.3) 21%, rgba(244,244,244,0.3) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(244,244,244,0) 18%,rgba(244,244,244,0.3) 21%,rgba(244,244,244,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(244,244,244,0) 18%,rgba(244,244,244,0.3) 21%,rgba(244,244,244,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#f4f4f4',GradientType=1 ); /* IE6-9 */
+  color: #f4f4f4;
+  max-width: 600px;
+  min-width: 500px;
+  border-left: none;
+  border-radius: 10px;
+}
+.cardText{
+  width: 100%;
+}
+h1 {
+  font-size: 34px;
+}
+.maR {
+  margin-right: 20px;
+}
+.marL {
+  margin-left: 10px;
+}
+.marT {
+  margin-top: 20px;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.navfix {
+  max-width: 1600px;
+  width: 100%;
+  overflow:hidden;
+  margin: 0 auto;
+}
+.navcorrect{
+  padding-top: 75px;
+}
+.navfix .slick-dots {
+  top: 450px;
+  left: auto;
+}
+.navfix .slick-dots li button:before{
+  font-size: 20px;
+  color: #f4f4f4;
+  line-height: 20px;
+}
+.bannerWrapper{
+  color:#f4f4f4;
+  margin-top: 90px;
+}
+.bg-white {
+  background-color: rgba(245, 245, 245, 0.8);
+}
+.underline {
+  text-decoration-line: underline;
+}

@@ -1,0 +1,35 @@
+{
+  "main": {
+    "header1": {
+      "picture":"header1.png",
+      "title": "A Felhivas",
+      "button": "Nyomj meg",
+      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+    },
+    "header2": {
+      "picture":"header2.png",
+      "title": "A Felhivas",
+      "button": "Nyomj meg",
+      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+    },
+    "header3": {
+      "picture":"header3.png",
+      "title": "A Felhivas",
+      "button": "Nyomj meg",
+      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+    },
+    "header4": {
+      "picture":"header4.png",
+      "title": "A Felhivas",
+      "button": "Nyomj meg",
+      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+    }
+  },
+  "menu": {
+    "Ételek": "Ételek.png",
+    "Desszertek": "Desszertek.png",
+    "Italok": "Italok.png",
+    "Pékség": "Pékség.png"
+  }
+
+}
