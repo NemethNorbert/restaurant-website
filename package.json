@@ -40,6 +40,8 @@
   },
   "homepage": "http://nemethnorbert.github.io/b54",
   "devDependencies": {
-    "gh-pages": "^1.0.0"
+    "gh-pages": "^1.0.0",
+    "git": "^0.1.5",
+    "git-cli": "^0.10.0"
   }
 }
