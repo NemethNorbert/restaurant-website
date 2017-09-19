@@ -37,5 +37,9 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "homepage": "http://nemethnorbert.github.io/b54",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
