@@ -10,7 +10,7 @@ class ProductCard extends React.PureComponent {
         <Card className={'myCard'}>
           <div className='row'>
             <div className="col-lg-4 col-md-4 col-sm-4  col-xs-12">
-              <CardImg top width="100%" src={"../pictures/"+meals.picture+".png"} className={'specialCard float-left'} alt="Kaja" />
+              <CardImg top width="100%" src={process.env.PUBLIC_URL + "/pictures/"+meals.picture+".png"} className={'specialCard float-left'} alt="Kaja" />
             </div>
             <div className="col-lg-8 col-md-8 col-sm-8 col-xs-12 cardText">
             <CardBlock className={'px-3'}>
@@ -18,7 +18,7 @@ class ProductCard extends React.PureComponent {
               <CardSubtitle className={'extra'}>{meals.contain.join(', ')}</CardSubtitle>
               <br/>
               <CardText>{meals.body}</CardText>
-              <CardTitle>{meals.price}</CardTitle>
+              <CardTitle className={"maR price"}>{meals.price+",-"}</CardTitle>
             </CardBlock>
             </div>
           </div>

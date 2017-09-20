@@ -201,7 +201,7 @@
         "picture": "dessert4",
         "category": "Joghurt",
         "price": "2000",
-        "contain": [ "paradicsom", "jégsaláta", "rukkola", "tojás", "lazac" ],
+        "contain": [],
         "extra":
           {
             "vega": false,
@@ -217,7 +217,7 @@
         "picture": "dessert5",
         "category": "Joghurt",
         "price": "1800",
-        "contain": [ "paradicsom", "jégsaláta", "mozzarella", "parmezán" ],
+        "contain": [],
         "extra":
           {
             "vega": false,

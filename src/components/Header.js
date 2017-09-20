@@ -11,7 +11,7 @@ class Header extends React.PureComponent {
     this.setState({main: data.main})
   }
   render() {
-    const settings = {
+    const settings1 = {
       dots: true,
       infinite: true,
       speed: 900,
@@ -23,16 +23,17 @@ class Header extends React.PureComponent {
       swipeToScroll: true,
       centerMode: false,
       centerPadding: '0px',
+      arrows: false
     };
     return(
-      <Slider {...settings}>
+      <Slider {...settings1}>
         {Object.values(this.state.main).map((types, index) =>
-            <div key={index} className="jumbotron menubanner" style={{backgroundImage:"url('../pictures/"+types.picture+"')",height:"500px"}}>
+            <div key={index} className="jumbotron menubanner" style={{backgroundImage:"url('"+process.env.PUBLIC_URL +"/pictures/"+types.picture+"')",height:"500px"}}>
               <div className="container bannerWrapper">
                 <h1 className="display-3">{types.title}</h1>
                 <p className="lead underline">{types.body}</p>
                 <div className="text-center marT">
-                <button className="btn btn-primary btn-lg">{types.button}</button>
+                <button className="btn btn-outline-secondary btn-lg">{types.button}</button>
                 </div>
               </div>
             </div>

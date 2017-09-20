@@ -37,23 +37,24 @@ class Navigation extends Component {
     let styler = classnames('');
     return (
       <div>
-      <Navbar color="inverse" fixed={`top`} inverse toggleable className={"navfix"} >
-          <NavbarToggler right onClick={this.toggle}/>
+      <Navbar fixed={`top`} inverse toggleable className={"navfix bg-brown"} >
+          <NavbarToggler right onClick={this.toggle} className=""/>
           <NavbarBrand href="/" className={'mx-auto'}><br /><div className="text-center logo">
-            <img className="logoImg" src={"../pictures/brand/brand.png"} />
+            <img className="logoImg" src={process.env.PUBLIC_URL + "/pictures/brand/brand.png"} alt="B54 Cafe, Bistro & Bakery"/>
           </div></NavbarBrand>
-          <Collapse isOpen={this.state.isOpen} navbar>
+        <Collapse isOpen={this.state.isOpen} navbar className={"toggler "}>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink to={'/'} exact className={styler} activeClassName="active" tag={RRNavLink}>Homepage</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to={'/about'} className={styler} activeClassName="active" tag={RRNavLink}>About</NavLink>
-              </NavItem>
-              {Object.keys(this.props.meals).map((types, index) =>
+              <div className="static">
                 <NavItem>
+                  <NavLink to={'/'} exact activeClassName="active" tag={RRNavLink}>Homepage</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={'/about'} className={styler} activeClassName="active" tag={RRNavLink}>About</NavLink>
+                </NavItem>
+              </div>
+              {Object.keys(this.props.meals).map((types, index) =>
+                <NavItem key={types+index}>
                   <NavLink
-                    key={types}
                     to={'/'+types.normalize('NFD').replace(/[\u0300-\u036f]/g, "")} className={styler} activeClassName="active" tag={RRNavLink}>
                     {types}
                   </NavLink>
@@ -63,7 +64,7 @@ class Navigation extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-
+        <div className="navline"></div>
         <div className="navfix">
           <Switch>
   					<Route exact path="/" component={ Header } />

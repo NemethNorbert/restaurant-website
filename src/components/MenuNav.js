@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 class MenuNav extends React.PureComponent {
 
   render() {
-    let styler = classnames('btn','btn-secondary', 'marL');
+    let styler = classnames('btn','btn-secondary', 'marL','bg-grey','menu-btn');
 
     return (
       <div>

@@ -113,6 +113,7 @@ class Menu extends React.PureComponent {
         <FullMenuList
           meals={this.state.meal}
           search={searchMeals}
+          searchTerm={this.state.search}
         />
       );
     };
@@ -125,7 +126,7 @@ class Menu extends React.PureComponent {
               placeholder={"Enter search term"}
               value={this.state.searchTerm}
               onChange={this.handleSearch}
-              className={"float-left maR search"}
+              className={"float-left maR bg-grey search"}
             />
             <MenuNav
               handleClick={this.handleClick}

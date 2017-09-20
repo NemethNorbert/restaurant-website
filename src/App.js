@@ -7,6 +7,7 @@ import About from './components/About';
 import Menu from './components/Menu';
 import Homepage from './components/Homepage';
 import data from './testData';
+import Footer from './components/Footer';
 
 // import Perf from 'react-addons-perf';
 // if (typeof window !== 'undefined') {
@@ -50,7 +51,7 @@ class App extends React.Component {
       canonical: 'http://example.com/path/to/page',
       meta: {
         charset: 'utf-8',
-        
+
         name: {
           keywords: 'react,meta,document,html,tags'
         }
@@ -79,6 +80,7 @@ class App extends React.Component {
               )
             }
   			</Switch>
+        <Footer />
       </DocumentMeta>
     );
   }

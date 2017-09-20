@@ -24,15 +24,19 @@ class SpecCardList extends React.PureComponent {
       }
     return (
       <div className="marT">
-      {Object.values(card).map((meals) =>
+        <div className="clearfix">
+            <div className="cardWrapper">
+            {Object.values(card).map((meals) =>
 
-          <ProductCard
-            key={meals.id}
-            meals={meals}
-          />
-          )
-        }
-      </div>
+                <ProductCard
+                  key={meals.id}
+                  meals={meals}
+                />
+                )
+              }
+            </div>
+          </div>
+        </div>
     );
   }
 }

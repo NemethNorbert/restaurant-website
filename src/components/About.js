@@ -26,12 +26,12 @@ class About extends React.PureComponent {
         <div className="container" style={{width:"90%"}}>
           <h1>AboutPage</h1>
           <Slider {...settings}>
-            <div><img className="SliderImg" src="../pictures/picture1.png" alt="kaja"/></div>
-            <div><img className="SliderImg" src="../pictures/picture2.png" alt="kaja"/></div>
-            <div><img className="SliderImg" src="../pictures/picture3.png" alt="kaja"/></div>
-            <div><img className="SliderImg" src="../pictures/picture4.png" alt="kaja"/></div>
-            <div><img className="SliderImg" src="../pictures/picture5.png" alt="kaja"/></div>
-            <div><img className="SliderImg" src="../pictures/picture6.png" alt="kaja"/></div>
+            <div><img className="SliderImg" src={process.env.PUBLIC_URL + "/pictures/picture1.png"} alt="kaja"/></div>
+            <div><img className="SliderImg" src={process.env.PUBLIC_URL + "/pictures/picture2.png"} alt="kaja"/></div>
+            <div><img className="SliderImg" src={process.env.PUBLIC_URL + "/pictures/picture3.png"} alt="kaja"/></div>
+            <div><img className="SliderImg" src={process.env.PUBLIC_URL + "/pictures/picture4.png"} alt="kaja"/></div>
+            <div><img className="SliderImg" src={process.env.PUBLIC_URL + "/pictures/picture5.png"} alt="kaja"/></div>
+            <div><img className="SliderImg" src={process.env.PUBLIC_URL + "/pictures/picture6.png"} alt="kaja"/></div>
           </Slider>
         </div>
       </div>
