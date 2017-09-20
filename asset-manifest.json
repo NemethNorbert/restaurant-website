@@ -1,11 +1,16 @@
 {
-  "main.css": "static/css/main.d229afad.css",
-  "main.css.map": "static/css/main.d229afad.css.map",
-  "main.js": "static/js/main.a2b87143.js",
-  "main.js.map": "static/js/main.a2b87143.js.map",
+  "main.css": "static/css/main.c3e51545.css",
+  "main.css.map": "static/css/main.c3e51545.css.map",
+  "main.js": "static/js/main.c18292d0.js",
+  "main.js.map": "static/js/main.c18292d0.js.map",
+  "static\\media\\desszertek.png": "static/media/desszertek.3850bf4d.png",
+  "static\\media\\italok.png": "static/media/italok.c0853e9f.png",
   "static\\media\\pattern.png": "static/media/pattern.3172f2aa.png",
+  "static\\media\\pattern2.png": "static/media/pattern2.32dec3c0.png",
+  "static\\media\\pékség.png": "static/media/pékség.59ab1279.png",
   "static\\media\\slick.eot": "static/media/slick.ced611da.eot",
   "static\\media\\slick.svg": "static/media/slick.f97e3bbf.svg",
   "static\\media\\slick.ttf": "static/media/slick.d41f55a7.ttf",
-  "static\\media\\slick.woff": "static/media/slick.b7c9e1e4.woff"
+  "static\\media\\slick.woff": "static/media/slick.b7c9e1e4.woff",
+  "static\\media\\ételek.png": "static/media/ételek.6dfb206a.png"
 }
