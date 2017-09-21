@@ -244,6 +244,7 @@ body {
 .static{
   position: fixed;
   left:0;
+  width: 200px;
 }
 .static .nav-link{
   float:left;
