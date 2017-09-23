@@ -16,7 +16,7 @@ class FullMenuList extends React.Component {
       <div className="marT">
       {Object.values(meals).map((categories, index) =>
             <div key={index} className="pad">
-            <h1 style={{color:"#f4f4f4", marginLeft:"20%"}}>{Object.values(categories)[0].category}</h1>
+            <h1 style={{color:"#f4f4f4", marginLeft:"5%"}}>{Object.values(categories)[0].category}</h1>
             <hr className="hr"/>
             <div className="clearfix">
               <CardList

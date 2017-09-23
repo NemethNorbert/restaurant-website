@@ -1,5 +1,192 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+/*Homepage menu --- START*/
+.menuWrapper{
+  text-align: center;
+  max-width: 1600px;
+  margin-top:-31px;
+}
+.menuWrapper .nav-link{
+  padding: 0;
+}
+.menuWrapper .container{
+  position: relative;
+  margin: 0 auto;
+}
+.menuDisplay{
+  width:50%;
+  max-width: 532px;
+  user-select: none;
+}
+.specialhr{
+  color:#f4f4f4;
+  background-color: white;
+  width: 110px;
+  margin: 0 auto;
+  z-index: 9999;
+  border: 1px solid white;
+}
+.menu{
+  float: left;
+  width: 25%;
+  color:white;
+  height: 250px;
+  background: #363636;
+  display: table;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu.menu1 .menuImage{
+  background-image: url('./pictures/brand/pékség.png');
+}
+.menu.menu2 .menuImage{
+  background-image: url('./pictures/brand/ételek.png');
+}
+.menu.small1 .menuImage{
+  background-image: url('./pictures/brand/italok.png');
+}
+.menu.small2 .menuImage{
+  background-image: url('./pictures/brand/desszertek.png');
+}
+.menuImage{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.3;
+  filter: url(data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter i…0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale);
+  filter: grayscale(100%);
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+.menu1{
+  height: 500px;
+  color: white;
+}
+.menu2{
+  display: table;
+  color: white;
+  height: 500px;
+}
+.small1,.small2{
+  float:right;
+  height: 250px;
+}
+.menu .menuTitle{
+  text-align: center;
+	position: relative;
+}
+.menu .menuTitle:after{
+  content: "";
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	width: 222px;
+	height: 222px;
+	opacity: 0;
+	position: absolute;
+	border-radius: 50%;
+	margin: -115px 0 0 -111px;
+	background: rgba(34, 31, 31, 0.7);
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+   			transform: scale(0);
+   	-webkit-transition: transform ease 0.6s, opacity ease 0.5s;
+       -moz-transition: transform ease 0.6s, opacity ease 0.5s;
+	   		transition: transform ease 0.6s, opacity ease 0.5s;
+}
+.menu .menuTitle .lead{
+  z-index: 3;
+	color: #f0f0f0;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 66px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	position: relative;
+  background: url('./pictures/brand/bg-hr.png') no-repeat bottom center;
+}
+.menu .menuTitle .lead:after{
+  content: "";
+	width: 89px;
+	height: 0px;
+	display: block;
+	margin: 29px auto 20px auto;
+  background: url('./pictures/brand/bg-hr.png') no-repeat top center;
+}
+.menuBox .menuText{
+  padding: 0px!important;
+  margin-top: -20px;
+}
+.menu .menuTitle .menuText{
+  z-index: 3;
+	color: #f0f0f0;
+	font-size: 15px;
+	line-height: 0px;
+	max-width: 180px;
+	margin: -10px auto;
+	position: relative;
+}
+.menuWrapper .menu1 .menuTitle h3 {color: #e5a712;}
+.menuWrapper .menu2 .menuTitle h3 {color: #d1887f;}
+.menuWrapper .small1 .menuTitle h3 {color: #c20000;}
+.menuWrapper .small2 .menuTitle h3 {color: #48a1c6;}
+.menuWrapper .menu:hover .menuImage{
+  opacity: 1;
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
+}
+.menuWrapper .menu:hover .menuTitle:after{
+  opacity: 1;
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+   			transform: scale(1);
+}
+.menuBox{
+  float: right;
+	width: 50%;
+	padding: 35px 20px 0px 20px;
+  min-height: 250px;
+	text-align: center;
+  background: url('./pictures/brand/pattern4.png');
+}
+.menuBox .lead {
+				color: #000000;
+				font-size: 16px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+				.menuBox .lead:after {
+					content: "";
+					width: 90px;
+					height: 1px;
+					display: block;
+					margin: 23px auto 21px auto;
+					background: #48a1c6;
+				}
+
+			 .menuBox p {
+				color: #666666;
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 35px;
+			}
+.menu .wrapp{
+  display: table-cell;
+	vertical-align: middle;
+}
+/*Homepage menu --- END*/
 
 body {
   margin: 0;
@@ -9,172 +196,26 @@ body {
 }
 
 .navbar-toggler{
-  background-color: rgba(0,0,0,0.8)
+  background-color: rgba(0,0,0,0.8);
+  top: 2px;
 }
-.container{
-  width: 100%;
-}
+
 .pad {
   padding: 10px;
+}
+.padB{
+  padding-bottom:8px
 }
 .mar{
   margin-bottom: 10px;
 }
-.menuWrapper{
-  margin-top: -33px;
-}
-.menuDisplay{
-  width:50%;
-  max-width: 532px;
 
-}
-.float-left.menuDisplay{
-  margin: 0 0 0 auto;
-}
-.float-right.menuDisplay{
-  margin: 0 auto 0 0;
-}
-.menu1{
-  background-image: url('./pictures/brand/pékség.png');
-  height: 500px;
-  width: 50%;
-  color: white;
-  display: inline-block;
-  background-color: gray;
-  background-blend-mode: luminosity;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.menu2{
-  background-image: url('./pictures/brand/ételek.png');
-  background-color: gray;
-  background-blend-mode: luminosity;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: white;
-  height: 500px;
-  width: 50%;
-  display: inline-block;
-  color:#f4f4f4;
-}
-.smallmenu1{
-  background-image: url('./pictures/brand/italok.png');
-  height: 250px;
-  width: 50%;
-  display: inline-block;
-  color: white;
-  background-color: gray;
-  background-blend-mode: luminosity;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.smallmenu2{
-  background-image: url('./pictures/brand/desszertek.png');
-  height: 250px;
-  width: 50%;
-  display: inline-block;
-  color:white;
-  background-color: gray;
-  background-blend-mode: luminosity;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.menuTitle{
-  float:left;
-  width: 100%;
-  margin-top: 20%;
-  font-size: 36px;
-  font-smoothing:
-}
-.menuBox{
-  height:250px;
-  background-color: #f4f4f4;
-}
-.menuBox .menuTitle{
-  margin:10px auto;
-}
-.menuBox .specialhr{
-  border-top: 4px solid #ab8560;
-}
-.menuText{
-  float:left;
-  width: 100%;
-  margin-top: 10px;
-  font-size: 18px;
-}
-.menu1 .menuTitle{
-  color:yellow;
-}
-.menu2 .menuTitle{
-  color:lightgreen;
-}
-.smallmenu2 .menuTitle{
-  color:orange;
-}
-.smallmenu1 .menuTitle{
-  color:red;
-}
-.smallmenu1:hover {
-  background-color: transparent;
-  background-blend-mode: normal;
-}
-.smallmenu2:hover {
-  background-color: transparent;
-  background-blend-mode: normal;
-}
-.menu1:hover {
-  background-color: transparent;
-  background-blend-mode: normal;
-}
-.menu2:hover {
-  background-color: transparent;
-  background-blend-mode: normal;
-}
-.specialhr{
-  width: 100%;
-  height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  background-color: transparent;
-  border-top: 4px solid white;
-  float:left;
-  margin-left: 0px;
-}
-.grey-filter{
-  height: 100%;
-  z-index: 99999;
-  background-color: rgba(0,0,0,0.6);
-  border-radius: 0%;
-  transition: border-radius 1s, height 1s, margin-top 1s;
-}
-.smallmenu1:hover .grey-filter, .smallmenu2:hover .grey-filter{
-  border-radius: 100%;
-
-}
-.menu1:hover .grey-filter{
-  border-radius: 50%;
-  height: 250px;
-  margin-top:50%;
-}
-.menu2:hover .grey-filter{
-  border-radius: 50%;
-  height: 250px;
-  margin-top:50%;
-}
-.search{
-  width: 200px;
-  margin-bottom: 10px;
-}
 .extra {
   font-size: 12px;
   font-style: italic;
 }
 .card-text{
-  margin-top: -10px;
+  margin-top: 0px;
 }
 .card-title{
   color: #ab8560;
@@ -184,7 +225,7 @@ body {
   font-style: italic;
 }
 .btn-outline-secondary{
-  border-width: medium;
+  border-width: thin;
   border-color: white;
   color: white;
 }
@@ -197,16 +238,13 @@ body {
 }
 .specialCard{
   border-radius: 50%;
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   margin-top: 0em;
   box-shadow: 6px 6px 6px #ccc;
   -webkit-box-shadow: 10px 0px 6px rgba(244,244,244,0.5);
   -moz-box-shadow: 6px 6px 6px #ccc;
 
-}
-.sliderImg{
-  margin: 0 auto;
 }
 .myCard{
   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(244,244,244,0) 18%, rgba(244,244,244,0.3) 21%, rgba(244,244,244,0.3) 100%); /* FF3.6-15 */
@@ -222,9 +260,7 @@ body {
 .cardText{
   width: 100%;
 }
-.cardWrapper{
 
-}
 h1 {
   font-size: 34px;
 }
@@ -250,21 +286,25 @@ body {
   float:left;
 
 }
+.searchT{
+  width:250px;
+  margin-left: 20px;
+}
 .toggler{
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
-  top:53px;
-  margin-left: -17px;
+  top:52px;
+  margin-left: -16px;
   max-width: 1600px;
 }
 .navline{
   background-color: rgba(0, 0, 0, 0.8);
-  height: 40px;
+  height: 30px;
   width: 100%;
   max-width: 1600px;
   position: fixed;
-  top:40px;
+  top:42px;
   z-index: 999;
   visibility: hidden;
 }
@@ -303,27 +343,27 @@ body {
 .hr {
   color:#f4f4f4;
   background-color: white;
-  width: 70%;
-
+  width: 92%;
+  margin-top: 1px
 }
 .former .hr{
   width:100%;
 }
 .footerLogo{
   display: block;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .logoImg{
   z-index: 9122;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   top:-70px;
   position: absolute;
 }
 .logo{
   z-index: 9123;
   position: relative;
-  margin-left: -150px;
+  margin-left: -200px;
 }
 .bg-shadow{
   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
@@ -355,13 +395,18 @@ body {
   background-color: red;
 }
 .breadWrapper{
-  margin: 50px auto 0 auto;
+  margin: 0px auto 0 auto;
 }
 .formWrapper{
   color:#f4f4f4;
   padding:10px;
   text-align: center;
-
+}
+.formWrapper .lead{
+  margin-bottom: 16px
+}
+.formWrapper label{
+  margin-top: 10px;
 }
 .footEnd{
 
@@ -375,6 +420,9 @@ body {
 }
 .former .btn {
   margin: 0 auto;
+}
+.bg-clear{
+  background-color: #f4f4f4;
 }
 .bg-grey.search{
   border-color: #f4f4f4;
@@ -397,9 +445,151 @@ body {
 .bg-brown{
   background-image: url('./pictures/brand/pattern2.png');
 }
+.btn-outline-brown{
+  border-width: thin;
+  border-color: #ab8560;
+  color: #ab8560;
+}
+.btn-outline-brown:hover{
+  background-color: #ab8560;
+  color: #191919;
+}
 .footer{
   background-repeat: no-repeat;
-  background-position: 50% 90%;
+  background-position: 50% 110%;
+}
+.linepic{
+  width: 300px;
+  height: auto;
+}
+.lineWrapper{
+  align-self: center;
+    font-size: 18px;
+
+}
+.lineWrapper .btn{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.line{
+  box-shadow: 0px 5px 5px #999;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+.line h3,.line a,.lineWrapper h3{
+  font-size: 24px;
+}
+.bg-look{
+  background: url('./pictures/brand/keress_bg.png') no-repeat center center scroll;
+  min-height:500px;
+}
+.bg-contact{
+  background: url('./pictures/brand/bg-contact.png') no-repeat center center scroll;
+  min-height:500px;
+}
+.bigline{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.bigline .searchImg{
+  float:right;
+  margin-right: 10px;
+  transition: filter 0.5s;
+}
+
+.bigline .searchImg:hover{
+  filter: brightness(200%);
+}
+.lineWrapper .lead.imgTitle{
+  position: absolute;
+  margin: 120px 20%;
+  width: 1px;
+  font-size: 40px;
+  user-select: none;
+}
+
+.bg-line2{
+  background: url('./pictures/brand/line2.png') no-repeat center center scroll;
+}
+.bg-line2 h3{
+  padding-top: 100px;
+}
+.bg-line2 div{
+  padding-bottom: 117px;
+}
+.galeria{
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  height: 250px;
+  background: url('./pictures/brand/galeria.png') no-repeat center center scroll;
+  background-color: gray;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: scale(1.0);
+  transition: all 0.5s;
+  margin-top: 0px;
+}
+.galeria:hover{
+  transform: scale(1.04);
+  background-color: transparent;
+  background-blend-mode: normal;
+  color: #f4f4f4;
+}
+.galeriaText{
+  font-size: 40px;
+  color: #ff9900;
+  font-weight: bold;
+  transition: color 0.5s;
+  padding: 50px;
+}
+.galeria:hover .galeriaText{
+  color: white;
+}
+.sliderText{
+  width: 300px;
+  margin: 75px auto;
+}
+.sliderBox{
+
+  height: 250px;
+  align-self: center;
+}
+.sliderText .blockquote-footer{
+  margin-top: 10px;
+}
+.slick-slider{
+  margin-top: -8px;
+  width: 100%;
+  border-radius: 8px;
+}
+.galeriaSlider{
+  background: url('./pictures/brand/pattern3.png') repeat center center scroll;
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-top: -8px;
+  height: 250px;
+}
+.text-silent{
+  color: #ab8560;
+}
+.bigline .table{
+  width: 90%;
+}
+.bigline .table td,.bigline .table th{
+  border-top:none!important;
+}
+.google{
+  float:none!important;
+}
+.bigline .table th{
+  float:right;
 }
 @media(min-width:1601px){
   .static .nav-link{
@@ -410,32 +600,47 @@ body {
     width: 160px;
   }
 }
-@media(max-width:970px){
-  .float-right.menuDisplay{
-    float:none!important;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .float-left.menuDisplay{
-    margin: 0 auto;
-    width: 100%;
-  }
-  .float-right.menuDisplay .menu1,.menu2{
-    max-height: 250px;
-    margin-top: -7px;
-  }
-  .menu1:hover .grey-filter{
-    border-radius: 50%;
-    height: 250px;
-    margin: 0;
-  }
-  .menu2:hover .grey-filter{
-    border-radius: 50%;
-    height: 250px;
-    margin: 0;
-  }
+@media(max-width:992px){
+.menuWrapper .container{
+  width: 100%;
 }
+.linepic{
+  width: 250px;
+}
+.bigline .searchImg{
+  width: 350px;
+  margin-right: 0px;
+}
+}
+@media(max-width: 860px){.logo{margin-left: -200px;}}
 @media(max-width:768px){
+  .bigline .searchImg{
+    width: 300px;
+  }
+  .menuBox{
+    width: 100%; float: none; background-repeat: repeat-x;
+  }
+  .menuWrapper .menu{
+    height: 250px !important;
+    min-height: 0px !important;
+  }
+  .menuBox{
+    margin-bottom: -50px;
+  }
+  .menuWrapper .menu { height: 210px !important; }
+	.menuWrapper .menu .menuTitle h3 { font-size: 40px; }
+	.menuWrapper .menu .menuTitle h3:after { font-size: 18px; }
+	.menuWrapper .menu .menuTitle p { font-size: 14px; line-height: 21px; max-width: 160px; }
+	.menuWrapper .menu .menuTitle:after { width: 300px; height: 300px; margin: -150px 0 0 -150px; }
+  .linepic{
+    width:200px;
+  }
+  .bg-line2 h3 {
+    padding-top: 30px;
+}
+  .bg-line2 .padB{
+    padding-bottom: 30px
+  }
   .specialCard{
     border-radius: 50%;
     width: 180px;
@@ -447,15 +652,47 @@ body {
     height: 184px;
   }
   .SliderImg{
-    width:80%;
+    position: relative;
+    width:100%;
     margin: 0 auto;
   }
-  .logo{
-    margin-left: -270px;
+  .bg-line2{
+    margin-bottom: 5px;
   }
 
+  .static .nav-link{
+    float:none;
+  }
+  .toggler{
+    padding-left:10px;
+  }
+  .static{
+
+    position: relative;
+  }
+  .logo{
+    margin-left: -200px;
+  }
+  .navline{
+    visibility: visible;
+  }
+  .navlink,.galeria{
+    width: 100%!important;
+  }
+  .galeriaSlider{
+    width: 100%!important;
+  }
+  .container{
+    width: 99%!important;
+    padding: 0;
+  }
+  .galeriaSlider .slick-arrow{
+    display: none;
+  }
 }
-@media(max-width:576px){
+@media(max-width:578px){
+  .menuWrapper .menu { width: 50%; height: 260px !important;}
+
   .myCard{
     background: -moz-linear-gradient(left, rgba(244,244,244,0.3) 0%,rgba(244,244,244,0.3) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(244,244,244,0.3) 0%,rgba(244,244,244,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -484,11 +721,6 @@ body {
   .bannerWrapper .btn{
     font-size: 20px;
   }
-  .SliderImg{
-    width:80%;
-    margin: 0 auto;
-  }
-
   .static .nav-link{
     float:none;
   }
@@ -500,9 +732,38 @@ body {
     position: relative;
   }
   .logo{
-    margin-left: -150px;
+    margin-left: -170px;
+  }
+  .logoImg{
+    width: 170px;
+    height: 170px;
+
   }
   .navline{
     visibility: visible;
   }
+
+  .bigline img{
+    width: 300px;
+  }
+
+  .former .btn {
+    margin: 10px auto 0 auto;
+  }
+}
+@media(max-width:476px){
+  .menuWrapper .menu { width: 100%; float: none; }
+  .menu{
+    margin-bottom:5px;
+    margin-top: 0px!important;
+  }
+  .menuBox{
+    margin-bottom: -45px;
+  }
+  .menu1{
+    margin-top: 65px;
+  }
+}
+@media(max-width:376px){
+
 }

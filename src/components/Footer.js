@@ -8,7 +8,7 @@ import Newsletter from './Newsletter';
 class Footer extends React.Component {
   render() {
     return (
-      <div className="footer bg-brown" style={{backgroundImage:"url('../pictures/brand/footer.png')"}}>
+      <div className="footer bg-brown" style={{backgroundImage:"url('"+process.env.PUBLIC_URL + "/pictures/brand/footer.png')"}}>
         <div className="container breadWrapper text-center">
           <Breadcrumb className={"bg-brown"}>
             <div className="footWrapper text-center">

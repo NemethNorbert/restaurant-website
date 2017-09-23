@@ -69,18 +69,20 @@ class App extends React.Component {
       <DocumentMeta {...meta}>
         <Navigation meals={meals}/>
         <Switch>
-					<Route exact path="/" component={ Homepage } />
-					<Route path="/about" component={ About } />
+					<Route exact path={process.env.PUBLIC_URL+"/"} component={ Homepage } />
+					<Route path={process.env.PUBLIC_URL+"/about"} component={ About } />
           {Object.keys(meals).map((types, index) =>
               <Route
                 key={types}
-                path={'/'+types.normalize('NFD').replace(/[\u0300-\u036f]/g, "")}
+                path={process.env.PUBLIC_URL+'/'+types.normalize('NFD').replace(/[\u0300-\u036f]/g, "")}
                 component={menu}
                 />
               )
             }
   			</Switch>
+        <div className="clearfix">
         <Footer />
+        </div>
       </DocumentMeta>
     );
   }

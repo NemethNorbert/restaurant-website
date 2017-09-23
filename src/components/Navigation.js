@@ -37,7 +37,7 @@ class Navigation extends Component {
     let styler = classnames('');
     return (
       <div>
-      <Navbar fixed={`top`} inverse toggleable className={"navfix bg-brown"} >
+      <Navbar fixed={`top`} inverse toggleable={"sm"} className={"navfix bg-brown"} >
           <NavbarToggler right onClick={this.toggle} className=""/>
           <NavbarBrand href="/" className={'mx-auto'}><br /><div className="text-center logo">
             <img className="logoImg" src={process.env.PUBLIC_URL + "/pictures/brand/brand.png"} alt="B54 Cafe, Bistro & Bakery"/>
@@ -46,16 +46,16 @@ class Navigation extends Component {
             <Nav className="ml-auto" navbar>
               <div className="static">
                 <NavItem>
-                  <NavLink to={'/'} exact activeClassName="active" tag={RRNavLink}>Homepage</NavLink>
+                  <NavLink to={process.env.PUBLIC_URL+'/'} exact activeClassName="active" tag={RRNavLink}>Homepage</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to={'/about'} className={styler} activeClassName="active" tag={RRNavLink}>About</NavLink>
+                  <NavLink to={process.env.PUBLIC_URL+'/about'} className={styler} activeClassName="active" tag={RRNavLink}>About</NavLink>
                 </NavItem>
               </div>
               {Object.keys(this.props.meals).map((types, index) =>
                 <NavItem key={types+index}>
                   <NavLink
-                    to={'/'+types.normalize('NFD').replace(/[\u0300-\u036f]/g, "")} className={styler} activeClassName="active" tag={RRNavLink}>
+                    to={process.env.PUBLIC_URL+'/'+types.normalize('NFD').replace(/[\u0300-\u036f]/g, "")} className={styler} activeClassName="active" tag={RRNavLink}>
                     {types}
                   </NavLink>
                 </NavItem>
@@ -67,8 +67,8 @@ class Navigation extends Component {
         <div className="navline"></div>
         <div className="navfix">
           <Switch>
-  					<Route exact path="/" component={ Header } />
-  					<Route path="/about" component={ Header } />
+  					<Route exact path={process.env.PUBLIC_URL+"/"} component={ Header } />
+  					<Route path={process.env.PUBLIC_URL+"/about"} component={ Header } />
           </Switch>
         </div>
       </div>

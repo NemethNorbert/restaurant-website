@@ -15,8 +15,7 @@ class ProductCard extends React.PureComponent {
             <div className="col-lg-8 col-md-8 col-sm-8 col-xs-12 cardText">
             <CardBlock className={'px-3'}>
               <CardTitle>{meals.name}</CardTitle>
-              <CardSubtitle className={'extra'}>{meals.contain.join(', ')}</CardSubtitle>
-              <br/>
+              {/*<CardSubtitle className={'extra'}>{meals.contain.join(', ')}</CardSubtitle>*/}
               <CardText>{meals.body}</CardText>
               <CardTitle className={"maR price"}>{meals.price+",-"}</CardTitle>
             </CardBlock>

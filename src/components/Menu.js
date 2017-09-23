@@ -120,13 +120,13 @@ class Menu extends React.PureComponent {
     return (
       <div>
         <MenuHeader current={this.state.current}/>
-        <div className="container">
+        <div className="">
             <Input
               type={"search"}
               placeholder={"Enter search term"}
               value={this.state.searchTerm}
               onChange={this.handleSearch}
-              className={"float-left maR bg-grey search"}
+              className={"float-left maR bg-grey search searchT"}
             />
             <MenuNav
               handleClick={this.handleClick}
@@ -135,11 +135,11 @@ class Menu extends React.PureComponent {
             />
           <div className="clearfix"></div>
             <Switch>
-              <Route exact path={'/'+this.state.current} component={fullList} />
+              <Route exact path={process.env.PUBLIC_URL+'/'+this.state.current} component={fullList} />
               {Object.keys(this.state.meal).map((types, index) =>
                   <Route
                     key={types}
-                    path={'/'+this.state.current+'/'+types.normalize('NFD').replace(/[\u0300-\u036f]/g, "")}
+                    path={process.env.PUBLIC_URL+'/'+this.state.current+'/'+types.normalize('NFD').replace(/[\u0300-\u036f]/g, "")}
                     component={specCardList}
                     />
                 )
