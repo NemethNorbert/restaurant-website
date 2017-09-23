@@ -1,6 +1,25 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+/*font-family: Amatic SC,sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+/*font-family: 'Kalam', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+/*font-family: 'Noto Sans', sans-serif;*/
+
+/* FONTS */
+p,div,span,a{
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+}
+h1,h2,h3,h4,h5,h6,.lead{
+  font-family: 'Kalam', cursive;
+}
+.nav-item .nav-link{
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+}
+/*FONTS END*/
 /*Homepage menu --- START*/
 .menuWrapper{
   text-align: center;
@@ -8,7 +27,7 @@
   margin-top:-31px;
 }
 .menuWrapper .nav-link{
-  padding: 0;
+  padding: 0px;
 }
 .menuWrapper .container{
   position: relative;
@@ -160,25 +179,26 @@
 	text-align: center;
   background: url('./pictures/brand/pattern4.png');
 }
-.menuBox .lead {
+.menuBox {
 				color: #000000;
-				font-size: 16px;
 				font-weight: bold;
-				text-transform: uppercase;
 			}
-
+.menuBox .lead{
+  font-size: 24px;
+}
 				.menuBox .lead:after {
 					content: "";
 					width: 90px;
 					height: 1px;
 					display: block;
-					margin: 23px auto 21px auto;
+					margin: 8px auto 28px auto;
 					background: #48a1c6;
+          text-transform: uppercase;
 				}
 
-			 .menuBox p {
+			 .menuBox .menuText {
 				color: #666666;
-				font-size: 16px;
+				font-size: 18px;
 				line-height: 24px;
 				margin-bottom: 35px;
 			}
@@ -187,14 +207,18 @@
 	vertical-align: middle;
 }
 /*Homepage menu --- END*/
-
+.navbar-nav{
+  padding: 5px 0px;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-image: url('./pictures/brand/pattern.png');
 }
-
+.container{
+  line-height: 1;
+}
 .navbar-toggler{
   background-color: rgba(0,0,0,0.8);
   top: 2px;
@@ -215,14 +239,17 @@ body {
   font-style: italic;
 }
 .card-text{
-  margin-top: 0px;
+  margin-top: 25px;
 }
 .card-title{
   color: #ab8560;
 }
 .price {
-  text-align: right;
+  font-size: 30px;
   font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }
 .btn-outline-secondary{
   border-width: thin;
@@ -289,6 +316,7 @@ body {
 .searchT{
   width:250px;
   margin-left: 20px;
+  margin-bottom: 5px;
 }
 .toggler{
   background-color: rgba(0, 0, 0, 0.8);
@@ -344,7 +372,10 @@ body {
   color:#f4f4f4;
   background-color: white;
   width: 92%;
-  margin-top: 1px
+  margin-top: 1px;
+}
+.bg-brown.hr{
+  width: 30%;
 }
 .former .hr{
   width:100%;
@@ -390,8 +421,7 @@ body {
 }
 .footWrapper{
   margin:0 auto;
-
-  max-width: 550px;
+  max-width: 560px;
   background-color: red;
 }
 .breadWrapper{
@@ -593,11 +623,10 @@ body {
 }
 @media(min-width:1601px){
   .static .nav-link{
-
   }
   .static{
     position: relative;
-    width: 160px;
+    width: 165px;
   }
 }
 @media(max-width:992px){
@@ -618,14 +647,13 @@ body {
     width: 300px;
   }
   .menuBox{
-    width: 100%; float: none; background-repeat: repeat-x;
+    width: 100%; float: none;
+
+    margin-bottom: -50px;
   }
   .menuWrapper .menu{
     height: 250px !important;
     min-height: 0px !important;
-  }
-  .menuBox{
-    margin-bottom: -50px;
   }
   .menuWrapper .menu { height: 210px !important; }
 	.menuWrapper .menu .menuTitle h3 { font-size: 40px; }
@@ -692,7 +720,14 @@ body {
 }
 @media(max-width:578px){
   .menuWrapper .menu { width: 50%; height: 260px !important;}
-
+  .price {
+    font-size: 30px;
+    font-style: italic;
+    position: relative;
+    text-align: right;
+    margin-bottom: -10px;
+    margin-right: -10px;
+  }
   .myCard{
     background: -moz-linear-gradient(left, rgba(244,244,244,0.3) 0%,rgba(244,244,244,0.3) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(244,244,244,0.3) 0%,rgba(244,244,244,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -706,11 +741,17 @@ body {
   .specialCard{
     border-radius: 0%;
     width: 100%;
+    max-height: 350px;
+    max-width: 350px;
     height: auto;
-    margin-top: 0em;
+    margin: 0 0px 0 20px;
+    padding:10px 10px 0 10px;
     box-shadow: 0px 0px 0px #ccc;
     -webkit-box-shadow: 0px 0px 0px rgba(244,244,244,0.5);
     -moz-box-shadow: 0px 0px 0px #ccc;
+  }
+  .myCard{
+    max-width: 400px
   }
   .bannerWrapper h1{
     font-size: 34px;
@@ -760,10 +801,26 @@ body {
   .menuBox{
     margin-bottom: -45px;
   }
+  .menuBox .menuTitle .menuText{
+    font-size: 14px;
+  }
+  .menuBox .lead{
+    font-size: 20px;
+  }
+  .menuBox .menuTitle .lead{
+    font-size: 20px;
+  }
   .menu1{
     margin-top: 65px;
   }
+  .specialCard{
+    margin: 0 auto;
+    max-width: none;
+    max-height: none;
+  }
 }
-@media(max-width:376px){
-
+@media(max-width:415px){
+  .specialCard{
+    margin-left: auto;
+  }
 }

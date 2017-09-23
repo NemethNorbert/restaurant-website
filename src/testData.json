@@ -116,7 +116,7 @@
       {
         "id": "beab5c39e511417b80d9af07b7b4cca0",
         "name": "Vargányakrém",
-        "picture": "picture8",
+        "picture": "picture9",
         "category": "Toastkrémek",
         "price": "1800",
         "contain": [ "vargánya", "tejföl", "majonéz", "hagyma" ],
@@ -131,8 +131,8 @@
       },
       {
         "id": "3088c79e33554b1da7842534898457e6",
-        "name": "Padlizsánkrém",
-        "picture": "picture9",
+        "name": "Csülkös tormakrém",
+        "picture": "picture8",
         "category": "Toastkrémek",
         "price": "800",
         "contain": [ "padlizsán", "zöldségek" ],
@@ -214,7 +214,7 @@
       {
         "id": "543eb62857a04e6caeb7c26d23ab3431",
         "name": "Málnás görög joghurt müzlivel",
-        "picture": "dessert5",
+        "picture": "dessert4",
         "category": "Joghurt",
         "price": "1800",
         "contain": [],
@@ -264,7 +264,7 @@
       {
         "id": "21d7be002f194ca1ac834dadddfb075f",
         "name": "Espresso Ristretto",
-        "picture": "italok2",
+        "picture": "italok1",
         "category": "Kávék",
         "price": "1200",
         "contain": [],
@@ -280,7 +280,7 @@
       {
         "id": "231266996ec649b78585afc27a4e034d",
         "name": "Caffé Macchiato",
-        "picture": "italok3",
+        "picture": "italok1",
         "category": "Kávék",
         "price": "800",
         "contain": [],
@@ -296,7 +296,7 @@
       {
         "id": "3a9fc357debe456fb5a05fb455438e82",
         "name": "Espresso Corretto",
-        "picture": "italok4",
+        "picture": "italok1",
         "category": "Kávék",
         "price": "2000",
         "contain": [],
@@ -312,7 +312,7 @@
       {
         "id": "8ba6c10fa96f43f796179218cd0ee334",
         "name": "Espresso Caffá con Panna",
-        "picture": "italok5",
+        "picture": "italok1",
         "category": "Kávék",
         "price": "1800",
         "contain": [],
@@ -328,7 +328,7 @@
       {
         "id": "3c7c07f7f14f4c9b82233573c9d46688",
         "name": "Frissen facsart narancslé",
-        "picture": "italok6",
+        "picture": "italok1",
         "category": "Üditők",
         "price": "2800",
         "contain": [],
@@ -344,7 +344,7 @@
       {
         "id": "a9530fb324fb45d0b2ee2f35ea783da7",
         "name": "Espresso Lungo",
-        "picture": "italok7",
+        "picture": "italok1",
         "category": "Kávék",
         "price": "1200",
         "contain": [],
@@ -360,7 +360,7 @@
       {
         "id": "16a3210b742745f7968b22da2b499fa6",
         "name": "Earl Grey",
-        "picture": "italok8",
+        "picture": "italok1",
         "category": "Teák",
         "price": "1800",
         "contain": [],
@@ -376,7 +376,7 @@
       {
         "id": "f85a66b218ca48368ca6f6542f662d21",
         "name": "English breakfrest",
-        "picture": "italok9",
+        "picture": "italok1",
         "category": "Teák",
         "price": "800",
         "contain": [],
