@@ -1,11 +1,13 @@
 {
-  "main.css": "static/css/main.74cb1f5b.css",
-  "main.css.map": "static/css/main.74cb1f5b.css.map",
-  "main.js": "static/js/main.6cb85d65.js",
-  "main.js.map": "static/js/main.6cb85d65.js.map",
+  "main.css": "static/css/main.014de6d8.css",
+  "main.css.map": "static/css/main.014de6d8.css.map",
+  "main.js": "static/js/main.2f14de5b.js",
+  "main.js.map": "static/js/main.2f14de5b.js.map",
   "static\\media\\bg-contact.png": "static/media/bg-contact.7ae11942.png",
   "static\\media\\desszertek.png": "static/media/desszertek.3850bf4d.png",
   "static\\media\\galeria.png": "static/media/galeria.b8d5be41.png",
+  "static\\media\\gallery.jpg": "static/media/gallery.c2588d16.jpg",
+  "static\\media\\gallery2.jpg": "static/media/gallery2.2b09a9e1.jpg",
   "static\\media\\italok.png": "static/media/italok.c0853e9f.png",
   "static\\media\\keress_bg.png": "static/media/keress_bg.308578b0.png",
   "static\\media\\pattern.png": "static/media/pattern.3172f2aa.png",
@@ -17,5 +19,6 @@
   "static\\media\\slick.svg": "static/media/slick.f97e3bbf.svg",
   "static\\media\\slick.ttf": "static/media/slick.d41f55a7.ttf",
   "static\\media\\slick.woff": "static/media/slick.b7c9e1e4.woff",
+  "static\\media\\zoltan_pic3.png": "static/media/zoltan_pic3.6dd8f106.png",
   "static\\media\\ételek.png": "static/media/ételek.6dfb206a.png"
 }
