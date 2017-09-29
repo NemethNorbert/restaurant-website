@@ -8,12 +8,12 @@ import Menu from './components/Menu';
 import Homepage from './components/Homepage';
 import data from './testData';
 import Footer from './components/Footer';
+import Galeria from './components/Galeria';
+import Perf from 'react-addons-perf';
+if (typeof window !== 'undefined') {
 
-// import Perf from 'react-addons-perf';
-// if (typeof window !== 'undefined') {
-//
-//   window.Perf = Perf;
-// }
+  window.Perf = Perf;
+}
 
 class App extends React.Component {
   state= {
@@ -32,13 +32,13 @@ class App extends React.Component {
     this.setState({meals:data.data})
 
     // For Performance test
-    // setImmediate(() => {
-    //   Perf.start();
-    // });
-    // setTimeout(() => {
-    //   Perf.stop();
-    //   Perf.printWasted();
-    // }, 5000);
+    setImmediate(() => {
+      Perf.start();
+    });
+    setTimeout(() => {
+      Perf.stop();
+      Perf.printWasted();
+    }, 5000);
   }
 
 
@@ -70,7 +70,8 @@ class App extends React.Component {
         <Navigation meals={meals}/>
         <Switch>
 					<Route exact path={process.env.PUBLIC_URL+"/"} component={ Homepage } />
-					<Route path={process.env.PUBLIC_URL+"/about"} component={ About } />
+					<Route path={process.env.PUBLIC_URL+"/Rolunk"} component={ About } />
+          <Route path={process.env.PUBLIC_URL+"/Galeria"} component={ Galeria } />
           {Object.keys(meals).map((types, index) =>
               <Route
                 key={types}

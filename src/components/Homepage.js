@@ -92,7 +92,7 @@ class Homepage extends React.PureComponent {
           <div className="col-lg-6 col-md-6 lineWrapper text-white pad">
             <h3 className="lead text-center">Menj biztosra!</h3>
             <hr className="hr bg-brown"/>
-            <div className="padB text-center">Találd meg a kedvencedet villámgyorsan! Vegára vágysz vagy ölni tudnál egy kis mozzarelláért? Keress akár típusokra vagy hozzávalóra is!</div>
+            <div className="padB text-center">Találd meg a kedvencedet villámgyorsan! Vegára vágysz vagy oda vagy az olasz szalámiért? Keress akár típusra vagy hozzávalóra is!</div>
           </div>
           <div className="col-lg-6 col-md-6 lineWrapper">
             <NavLink to={process.env.PUBLIC_URL+'/Etelek'} tag={RRNavLink}><img src={process.env.PUBLIC_URL + "/pictures/brand/biglinepic.png"} className="searchImg" /></NavLink>
@@ -111,12 +111,12 @@ class Homepage extends React.PureComponent {
           <div className="col-lg-4 col-md-4 col-sm-12 lineWrapper mobfixer">
             <h3 className="lead text-center">Melegen ajánljuk</h3>
             <hr className="hr bg-brown"/>
-            <div className="padB text-center">Francia receptúra alapján készült péktermékeinket minden reggel mi magunk sütjük házi pékségünkben. Mi sem természetesebb, hogy szendvicdseinket is a frissen sült bagettekből és ciabbatákból készítjük. Így marad ropogós a szendvics, Párizst idéző a croissant és omlós a muffin.</div>
+            <div className="padB text-center">Francia receptúra alapján készült péktermékeinket minden reggel mi magunk sütjük házi pékségünkben. Mi sem természetesebb, hogy szendvicdseinket is a frissen sült bagettekből és ciabbatákból készítjük. Így lesz ropogós a szendvics, Párizst idéző a croissant és omlós a muffin.</div>
           </div>
         </div>
 
         <div className="container text-center" style={{width:"90%"}}>
-          <NavLink to={process.env.PUBLIC_URL+'/Etelek'} tag={RRNavLink}><div className="galeria"><div className="galeriaText">Galéria</div></div></NavLink>
+          <NavLink to={process.env.PUBLIC_URL+'/Galeria'} tag={RRNavLink}><div className="galeria"><div className="galeriaText">Galéria</div></div></NavLink>
           <Slider {...settings} className="galeriaSlider">
             <div className="sliderBox text-white">
               <blockquote className="blockquote sliderText">

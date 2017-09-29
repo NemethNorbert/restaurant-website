@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCard from './Card';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class CardList extends React.PureComponent {
 
@@ -11,9 +12,12 @@ class CardList extends React.PureComponent {
     } else {
       card = this.props.listedMeals
     }
-
     return (
       <div className="cardWrapper">
+        <CSSTransitionGroup
+          transitionName="card"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
       {Object.values(card).map((meals) =>
           <ProductCard
             key={meals.id}
@@ -21,6 +25,7 @@ class CardList extends React.PureComponent {
           />
           )
         }
+        </CSSTransitionGroup>
       </div>
     );
   }

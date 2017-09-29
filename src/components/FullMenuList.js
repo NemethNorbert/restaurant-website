@@ -2,7 +2,7 @@ import React from 'react';
 import CardList from './CardList';
 
 
-class FullMenuList extends React.Component {
+class FullMenuList extends React.PureComponent {
 
   render() {
 

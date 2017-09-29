@@ -1,9 +1,12 @@
 import React from 'react';
 import ProductCard from './Card';
 import pickBy from 'lodash.pickby';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class SpecCardList extends React.PureComponent {
-
+  componentDidMount(){
+    window.scrollTo(1, 250)
+  }
   render() {
     let card = null;
     let georgeYung = Object.keys(this.props.listedMeals);
@@ -26,14 +29,18 @@ class SpecCardList extends React.PureComponent {
       <div className="marT">
         <div className="clearfix">
             <div className="cardWrapper">
-            {Object.values(card).map((meals) =>
-
-                <ProductCard
-                  key={meals.id}
-                  meals={meals}
-                />
-                )
-              }
+              <CSSTransitionGroup
+                transitionName="card"
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={300}>
+                {Object.values(card).map((meals) =>
+                    <ProductCard
+                      key={meals.id}
+                      meals={meals}
+                    />
+                    )
+                  }
+              </CSSTransitionGroup>
             </div>
           </div>
         </div>

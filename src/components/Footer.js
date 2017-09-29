@@ -5,7 +5,7 @@ import { Breadcrumb, BreadcrumbItem,
 
 import Newsletter from './Newsletter';
 
-class Footer extends React.Component {
+class Footer extends React.PureComponent {
   render() {
     return (
       <div className="footer bg-brown" style={{backgroundImage:"url('"+process.env.PUBLIC_URL + "/pictures/brand/footer.png')"}}>

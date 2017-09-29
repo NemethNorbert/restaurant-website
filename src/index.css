@@ -1,5 +1,6 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 /*font-family: Amatic SC,sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Kalam');
@@ -307,7 +308,7 @@ body {
 .static{
   position: fixed;
   left:0;
-  width: 200px;
+  width: 300px;
 }
 .static .nav-link{
   float:left;
@@ -336,6 +337,10 @@ body {
   z-index: 999;
   visibility: hidden;
 }
+.gapfix{
+  margin-top:-30px;
+  margin-bottom: 5px;
+}
 .navfix {
   max-width: 1600px;
   width: 100%;
@@ -359,11 +364,25 @@ body {
 }
 .bannerWrapper{
   color:#f4f4f4;
-  margin-top: 90px;
+  margin-top: 150px;
   padding-top: 5px;
+  text-align: center;
+}
+.bannerWrapper h1{
+  font-size: 40px;
+
+}
+.bannerWrapper p{
+  font-size: 20px;
+}
+.bannerWrapper .btn{
+  font-size: 20px;
 }
 .bg-white {
   background-color: rgba(245, 245, 245, 0.8);
+}
+.bg-white-h{
+  background-color: rgba(245, 245, 245, 0.3);
 }
 .underline {
   text-decoration-line: underline;
@@ -621,15 +640,127 @@ body {
 .bigline .table th{
   float:right;
 }
+.cubeWrapper{
+  max-width: 1600px;
+
+}
+.cubeline{
+  max-width: 1330px;
+  max-height:400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.float-right.cubetext{
+  position: absolute;
+  right:0px;
+}
+.cubetext{
+  padding: 20px 40px;
+  width:50%;
+  max-width: 665px;
+  max-height: 400px;
+  margin-top: 5%;
+}
+.cubetext div{
+  align-content: baseline;
+}
+.cubepicture{
+  padding: 0!important;
+  width:50%;
+  display: inline;
+}
+.cubepicture img{
+  width: 100%;
+  height: auto;
+}
+.cubetext div {
+  padding-bottom: 20px;
+}
+.cubetext h3{
+  font-size: 30px;}
+.bg-chef{
+  background: url('./pictures/brand/zoltan_pic3.png') no-repeat center center;
+  background-size: contain;
+  min-height: 250px;
+  padding: 10px 50px
+}
+.bg-chef h3,.bg-chef hr{
+  font-size: 30px;
+  margin-left: 30px;
+  text-align: left!important;
+}
+.bg-chef hr{
+  width: 150px!important;
+}
+/* ANIMATIONS */
+.card-enter {
+  opacity: 0.01;
+}
+
+.card-enter.card-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.card-leave {
+  opacity: 1;
+}
+
+.card-leave.card-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.card-appear {
+  opacity: 0.01;
+}
+
+.card-appear.card-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
 @media(min-width:1601px){
   .static .nav-link{
   }
   .static{
     position: relative;
-    width: 165px;
+    width: 215px;
+  }
+}
+@media(min-width:1340px){
+  .float-right.cubetext{
+    position: relative;
+    display: table;
+  }
+}
+@media(max-width:1100px){
+  .cubetext{
+    margin-top: 1%;
   }
 }
 @media(max-width:992px){
+  .cubetext{
+    position: relative!important;
+    float:none!important;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .cubepicture{
+    float:none!important;
+  }
+  .cubeline{
+    max-height: 100%;
+    margin: 0 auto;
+  }
+  .cubepicture img{
+    width:50%;
+    margin: 0 auto;
+  }
+  .cubetext div{
+    width: 75%;
+    margin: 0 auto;
+    padding: 0px 0px;
+  }
 .menuWrapper .container{
   width: 100%;
 }
@@ -643,6 +774,18 @@ body {
 }
 @media(max-width: 860px){.logo{margin-left: -200px;}}
 @media(max-width:768px){
+  .cubepicture img{
+    width:75%;
+  }
+  .cubetext div{
+    width: 100%;
+    padding: 0px 0px;
+
+  }
+  .cubetext{
+    max-width: 100%;
+    width: 100%;
+  }
   .bigline .searchImg{
     width: 300px;
   }
@@ -717,8 +860,15 @@ body {
   .galeriaSlider .slick-arrow{
     display: none;
   }
+  .logoImg{
+    width: 170px;
+    height: 170px;
+  }
 }
 @media(max-width:578px){
+  .cubepicture img{
+    width:100%;
+  }
   .menuWrapper .menu { width: 50%; height: 260px !important;}
   .price {
     font-size: 30px;
@@ -754,7 +904,7 @@ body {
     max-width: 400px
   }
   .bannerWrapper h1{
-    font-size: 34px;
+    font-size: 28px;
   }
   .bannerWrapper p{
     font-size: 20px;
@@ -776,8 +926,8 @@ body {
     margin-left: -170px;
   }
   .logoImg{
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
 
   }
   .navline{

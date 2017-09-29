@@ -1,35 +1,41 @@
 {
   "main": {
-    "header1": {
-      "picture":"header1.png",
-      "title": "A Felhivas",
-      "button": "Nyomj meg",
-      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
-    },
     "header2": {
       "picture":"header2.png",
-      "title": "A Felhivas",
-      "button": "Nyomj meg",
-      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
-    },
-    "header3": {
-      "picture":"header3.png",
-      "title": "A Felhivas",
-      "button": "Nyomj meg",
-      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+      "title": "Mániánk a minőség és szenvedélyünk a konyhaművészet",
+      "button": "Rólunk",
+      "body": "Ismerj meg minket",
+      "hash": "Rolunk"
     },
     "header4": {
       "picture":"header4.png",
-      "title": "A Felhivas",
-      "button": "Nyomj meg",
-      "body": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+      "title": "Kezdődjön jólesően a nap",
+      "button": "Megnézem",
+      "body": "Reggelizz Nálunk",
+      "hash": "Etelek"
+    },
+    "header3": {
+      "picture":"header3.png",
+      "title": "Édes csábítás",
+      "button": "Tovább",
+      "body": "Ellenállhatalan francia finomságok",
+      "hash": "Desszertek"
+    },
+    "header1": {
+      "picture":"header1.png",
+      "title": "Van sütnivalónk a minőséghez",
+      "button": "Megnézem",
+      "body": "Hamisítatlan francia pékárú mindig frissen és ropogósan.",
+      "hash": "Pekseg"
     }
   },
   "menu": {
     "Ételek": "Ételek.png",
     "Desszertek": "Desszertek.png",
     "Italok": "Italok.png",
-    "Pékség": "Pékség.png"
+    "Pékség": "Pékség.png",
+    "Rólunk": "Rólunk.png",
+    "Galéria":"Galéria.png"
   }
 
 }

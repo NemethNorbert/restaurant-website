@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../headerData';
 import Slider from 'react-slick';
-
+import { NavLink } from 'react-router-dom';
 
 class Header extends React.PureComponent {
   state= {
@@ -33,7 +33,9 @@ class Header extends React.PureComponent {
                 <h1 className="display-3">{types.title}</h1>
                 <p className="lead underline">{types.body}</p>
                 <div className="text-center marT">
-                <button className="btn btn-outline-secondary btn-lg">{types.button}</button>
+                  <NavLink to={process.env.PUBLIC_URL+'/'+types.hash} exact activeClassName="active">
+                    <button className="btn btn-outline-secondary btn-lg">{types.button}</button>
+                  </NavLink>
                 </div>
               </div>
             </div>

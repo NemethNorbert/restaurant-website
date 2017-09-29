@@ -6,7 +6,7 @@ class Newsletter extends React.Component {
   render() {
     return (
       <div className="formWrapper">
-        <p className="lead">Ne maradj le a legújabb akciókról! Értesülj róluk elsőkézből</p>
+        <p className="lead">Ne maradj le a legújabb akciókról, értesülj róluk első kézből!</p>
         <Form inline className={"former"}>
           <InputGroup className={"marL"}>
             <InputGroupAddon htmlFor="newsletter" className="bg-white">@</InputGroupAddon>

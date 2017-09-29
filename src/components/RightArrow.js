@@ -1,6 +1,6 @@
 import React from 'react';
 
-class RightArrow extends React.Component {
+class RightArrow extends React.PureComponent {
   render() {
     return (
       <div className={this.props.className}

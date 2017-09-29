@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBlock,
-  CardTitle, CardSubtitle } from 'reactstrap';
+  CardTitle } from 'reactstrap';
 
 class ProductCard extends React.PureComponent {
   render() {
