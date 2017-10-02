@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Check out the current DEMO: https://nemethnorbert.github.io/restaurant-website/
 
 **Restaurant webdesign with reuse and scallability in mind**
 
@@ -25,7 +25,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
   -Bootstrap for ReactStrap and for the sake of easy css
 
-  -Progammatically generated Routes with React react-router
+  -Progammatically generated Routes with react-router
 
   -Programatically generated pages for the Main categories - menu pages
 
@@ -33,11 +33,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
   -Programatically generated Cards for the products
 
-  -The homepage and the aboutpage is static
+  -The homepage and the aboutpage is static, however the headers are easy to change and get the data, from a JSON.
 
 
 **ToDos**
 
--Refactor components in ReactStrap
--Create final homepage and aboutpage
+-Refactor components for readability
+-Fetch the data for headers as well
+-Build an admin site to update/change the data
 -All sorts of optimalizations

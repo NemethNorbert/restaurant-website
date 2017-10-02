@@ -46,14 +46,13 @@ class App extends React.Component {
     if(Object.keys(this.state.meals).length === 0){return null;}
     let { meals } = this.state;
     const meta = {
-      title: 'Some Meta Title',
-      description: 'I am a description, and I can create multiple tags',
-      canonical: 'http://example.com/path/to/page',
+      title: 'B54 Caffe and Bakery',
+      description: 'A B54 Caffe and Bakery-ben ropogós szendvicsek, friss saláták és francia finomságok várják, hogy belefeledkezz az ízek kavalkádjába.',
       meta: {
         charset: 'utf-8',
 
         name: {
-          keywords: 'react,meta,document,html,tags'
+          keywords: 'étterem,kávé,pékség,olasz,szendvics,saláta'
         }
       }
     };
